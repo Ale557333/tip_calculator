@@ -1,20 +1,16 @@
 # TIP Calculator
-This project is my first native Android app developed in Kotlin. The app's intends to calculate the tip when you go to the restaurants.
+This project is made in a native Android app developed in Kotlin. The app's intends to calculate the tip when you go to the restaurants.
 <!-- You can add more screenshots here if you like -->
 <img src="https://github.com/Ale557333/tip_calculator/assets/71138743/c00af78c-fe46-4dcf-b85d-cdee1b4c7387" width=260/>
 <img src="https://github.com/Ale557333/tip_calculator/assets/71138743/71091897-fafd-4d1f-be30-49f16ece8fe6" width=260/>
 
-## Techs
-- Activity
-- Intent
+## Project challenge
+The intention of this project is to use the technologies listed below.
+
 - Snackbar
-- Viewgroup
-  - LinearLayout
-  - ConstraintLayout
-- Views
-  - Imageview
-  - EditText
-  - Button
+- ViewBinding
+- ConstraintLayout
+
 
 
 
