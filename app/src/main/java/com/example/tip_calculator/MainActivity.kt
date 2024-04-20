@@ -1,5 +1,6 @@
 package com.example.tip_calculator
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -63,18 +64,30 @@ class MainActivity : AppCompatActivity() {
                 val totalTable = tableAmount / numberOfPeople
                 val tipCalculate = totalTable * percentage / 100
                 val totalWithTip = totalTable + tipCalculate
-                binding.tvResult.text = "Total including tip: $totalWithTip"
+
+
+                val intent = Intent(this, SummaryActivity::class.java)
+                intent.apply {
+                    putExtra("tableAmount", tableAmount)
+                    putExtra("numberOfThePeople", numberOfPeople)
+                    putExtra("percentage", percentage)
+                    putExtra("totalWithTip", totalWithTip)
+                }
+                clean()
+                startActivity(intent)
             }
         }
 
         binding.btnClean.setOnClickListener {
-            binding.tvResult.text = ""
-            binding.tieTotal.setText("")
-            binding.tiePeople.setText("")
-            binding.optionOne.isChecked = false
-            binding.optionTwo.isChecked = false
-            binding.optionThree.isChecked = false
-            binding.optionFour.isChecked = false
+            clean()
         }
+    }
+    private fun clean() {
+        binding.tieTotal.setText("")
+        binding.tiePeople.setText("")
+        binding.optionOne.isChecked = false
+        binding.optionTwo.isChecked = false
+        binding.optionThree.isChecked = false
+        binding.optionFour.isChecked = false
     }
 }
