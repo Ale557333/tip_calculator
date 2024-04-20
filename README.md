@@ -2,15 +2,17 @@
 This project is made in a native Android app developed in Kotlin. The app's intends to calculate the tip when you go to the restaurants.
 <!-- You can add more screenshots here if you like -->
 <img src="https://github.com/Ale557333/tip_calculator/assets/71138743/c00af78c-fe46-4dcf-b85d-cdee1b4c7387" width=260/>
-<img src="https://github.com/Ale557333/tip_calculator/assets/71138743/71091897-fafd-4d1f-be30-49f16ece8fe6" width=260/>
+<img src="https://github.com/Ale557333/tip_calculator/assets/71138743/f2868444-0073-40b4-866a-adb018927381" width=260/>
+
+
 
 ## Project challenge
 The intention of this project is to use the technologies listed below.
 
 - Snackbar
 - ViewBinding
+- Intent
 - ConstraintLayout
-
 
 
 
