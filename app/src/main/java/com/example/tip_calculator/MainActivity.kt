@@ -22,29 +22,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var percentage: Int = 0
-        binding.optionOne.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                percentage = 12
-            }
-        }
-
-        binding.optionTwo.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                percentage = 15
-            }
-        }
-
-        binding.optionThree.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                percentage = 18
-            }
-        }
-
-        binding.optionFour.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                percentage = 20
-            }
-        }
 
         binding.btnDone.setOnClickListener {
             val totalTableTemporary = binding.tieTotal.text
@@ -82,12 +59,9 @@ class MainActivity : AppCompatActivity() {
             clean()
         }
     }
+
     private fun clean() {
         binding.tieTotal.setText("")
         binding.tiePeople.setText("")
-        binding.optionOne.isChecked = false
-        binding.optionTwo.isChecked = false
-        binding.optionThree.isChecked = false
-        binding.optionFour.isChecked = false
     }
 }
