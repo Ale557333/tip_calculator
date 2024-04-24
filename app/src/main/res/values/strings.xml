@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">tip_calculator</string>
+    <string name="app_name">Tip Calculator</string>
+    <string name="summary">Summary</string>
+    <string name="tip_calculator">Tip Calculator</string>
+    <string name="please_fill_in_the_fields_below_to_calculate_your_bill">Please fill in the fields below to calculate your bill</string>
+    <string name="enter_the_total_amount_of_the_bill">Enter the total amount of the bill</string>
+    <string name="enter_the_number_of_people_at_the_table">Enter the number of people at the table</string>
+    <string name="tip_percentage">Tip percentage</string>
+    <string name="clear">Clear</string>
+    <string name="calculate">Calculate</string>
+    <string name="please_find_below_a_summary_of_your_account">Please find below a summary of your account</string>
+    <string name="total_table">Total table</string>
+    <string name="number_of_the_people">Number of the people</string>
+    <string name="tip">Tip</string>
+    <string name="total_per_person">Total per person</string>
+    <string name="refresh">Refresh</string>
+    <string name="tie_total_label">Ex 500.00</string>
+    <string name="tie_people_label">Ex 3</string>
+    <string name="tie_tip_insert_label">Ex 10</string>
+    <string name="please_fill_in_all_the_fields">Please fill in all the fields</string>
+
 </resources>

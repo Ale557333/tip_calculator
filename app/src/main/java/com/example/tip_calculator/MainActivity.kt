@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var percentage: Int = 0
-
         binding.btnDone.setOnClickListener {
             val totalTableTemporary = binding.tieTotal.text
             val numberOfPeopleTemporary = binding.tiePeople.text
@@ -27,7 +25,8 @@ class MainActivity : AppCompatActivity() {
                 tipInsert?.isEmpty() == true
             ) {
                 Snackbar
-                    .make(binding.tieTotal, "Please fill in all the fields", Snackbar.LENGTH_LONG)
+                    .make(binding.tieTotal,
+                        getString(R.string.please_fill_in_all_the_fields), Snackbar.LENGTH_LONG)
                     .show()
 
             } else {

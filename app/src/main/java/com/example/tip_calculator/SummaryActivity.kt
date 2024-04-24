@@ -21,14 +21,13 @@ class SummaryActivity : AppCompatActivity() {
         val totalWithTip = intent.getFloatExtra("totalWithTip", 0.0f)
 
         binding.tvTotalTable.text = tableAmount.toString()
-        binding.tvPercentage.text = percentage.toString()
+        binding.tvPercentage.text = percentage.toString() + "%"
         binding.tvNumberOfPeople.text = numberOfThePeople.toString()
         binding.tvTotalWhitTip.text = totalWithTip.toString()
 
         binding.btnRefresh.setOnClickListener {
             finish()
         }
-        println("Alex1" + totalWithTip)
 
     }
 }

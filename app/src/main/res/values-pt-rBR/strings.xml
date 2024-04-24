@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="summary">Resumo</string>
+    <string name="tip_calculator">Calculadora de Gorjeta</string>
+    <string name="please_fill_in_the_fields_below_to_calculate_your_bill">Preencha os campos abaixo para calcular sua conta</string>
+    <string name="enter_the_total_amount_of_the_bill">Total da conta</string>
+    <string name="enter_the_number_of_people_at_the_table">Quantidade de pessoas</string>
+    <string name="tip_percentage">Porcentagem da gorjeta</string>
+    <string name="clear">Limpar</string>
+    <string name="calculate">Calcular</string>
+    <string name="please_find_below_a_summary_of_your_account">Confira abaixo o resumo da sua conta</string>
+    <string name="total_table">Total mesa</string>
+    <string name="number_of_the_people">Número de pessoas</string>
+    <string name="tip">Gorjeta</string>
+    <string name="total_per_person">Total por pessoa</string>
+    <string name="refresh">Refazer</string>
+    <string name="tie_total_label">Ex 500,00</string>
+    <string name="tie_people_label">Ex 3</string>
+    <string name="tie_tip_insert_label">Ex 10</string>
+    <string name="please_fill_in_all_the_fields">Por favor preencher todos os campos</string>
+</resources>
