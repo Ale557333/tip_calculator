@@ -2,15 +2,9 @@ package com.example.tip_calculator
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.tip_calculator.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnDone.setOnClickListener {
             val totalTableTemporary = binding.tieTotal.text
             val numberOfPeopleTemporary = binding.tiePeople.text
+            val tipInsert = binding.tieTipInsert.text
 
             if (totalTableTemporary?.isEmpty() == true ||
                 numberOfPeopleTemporary?.isEmpty() == true
@@ -37,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val tableAmount: Float = totalTableTemporary.toString().toFloat()
                 val numberOfPeople: Int = numberOfPeopleTemporary.toString().toInt()
+                val percentage: Int = tipInsert.toString().toInt()
 
                 val totalTable = tableAmount / numberOfPeople
                 val tipCalculate = totalTable * percentage / 100
@@ -63,5 +59,6 @@ class MainActivity : AppCompatActivity() {
     private fun clean() {
         binding.tieTotal.setText("")
         binding.tiePeople.setText("")
+        binding.tieTipInsert.setText("")
     }
 }

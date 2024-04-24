@@ -16,8 +16,7 @@
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="InvalidId" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_subtitle"
@@ -33,7 +32,7 @@
         android:id="@+id/hint_total_table"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:text="Enter the total amount of the bill"
         app:layout_constraintStart_toStartOf="@+id/tv_subtitle"
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
@@ -43,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
         app:hintEnabled="false"
@@ -53,7 +53,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_total"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="Ex 500.00"
             android:inputType="numberDecimal"
             android:paddingStart="0dp"
@@ -89,10 +89,46 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_people"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ex 10"
+            android:layout_height="match_parent"
+            android:hint="Ex 3"
             android:inputType="number"
             android:maxLength="3"
+            android:paddingStart="0dp"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/hint_tip_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Tip percentage"
+        app:layout_constraintStart_toStartOf="@+id/til_people"
+        app:layout_constraintTop_toBottomOf="@+id/til_people" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_tip_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/til_people"
+        app:layout_constraintStart_toStartOf="@+id/til_people"
+        app:layout_constraintTop_toBottomOf="@+id/hint_tip_percentage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_tip_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Ex 10"
+            android:inputType="number"
             android:paddingStart="0dp"
             android:textSize="24sp"
             android:textStyle="bold">
@@ -130,21 +166,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline" />
-
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="16dp"
-        android:textAlignment="center"
-        android:textColor="@color/purple_new"
-        android:textSize="28dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/btn_done"
-        app:layout_constraintStart_toStartOf="@+id/btn_clean"
-        app:layout_constraintTop_toBottomOf="@+id/btn_clean" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
