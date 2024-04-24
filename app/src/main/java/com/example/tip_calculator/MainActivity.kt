@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
             val tipInsert = binding.tieTipInsert.text
 
             if (totalTableTemporary?.isEmpty() == true ||
-                numberOfPeopleTemporary?.isEmpty() == true
+                numberOfPeopleTemporary?.isEmpty() == true ||
+                tipInsert?.isEmpty() == true
             ) {
                 Snackbar
                     .make(binding.tieTotal, "Please fill in all the fields", Snackbar.LENGTH_LONG)
@@ -37,7 +38,6 @@ class MainActivity : AppCompatActivity() {
                 val totalTable = tableAmount / numberOfPeople
                 val tipCalculate = totalTable * percentage / 100
                 val totalWithTip = totalTable + tipCalculate
-
 
                 val intent = Intent(this, SummaryActivity::class.java)
                 intent.apply {
