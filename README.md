@@ -13,6 +13,7 @@ The intention of this project is to use the technologies listed below:
 - ViewBinding
 - Intent
 - ConstraintLayout
+- (i18n) features
 
 
 
