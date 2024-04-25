@@ -7,7 +7,7 @@ This project is made in a native Android app developed in Kotlin. The app's inte
 
 
 ## Project challenge
-The intention of this project is to use the technologies listed below:
+This project intends to use the challenges listed below:
 
 - Snackbar
 - ViewBinding
